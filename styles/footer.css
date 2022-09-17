@@ -1,0 +1,11 @@
+.foot {
+  background-color: gray;
+  height: 3rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.copyright {
+  padding-top: 5px;
+  text-align: center;
+}

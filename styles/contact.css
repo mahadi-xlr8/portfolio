@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contact_head {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  height: 6vh;
+
+  z-index: 10;
+}
+.logo {
+  position: relative;
+  font-weight: bolder;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 1.5rem;
+  padding-left: 2px;
+  transition: transform 0.5s;
+}
+.logo:hover,
+.contact_head li:hover {
+  transform: perspective(200px) translateZ(10px);
+}
+.contact_head ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact_head li {
+  position: relative;
+  list-style: none;
+}
+
+.contact_head li a {
+  text-decoration: none;
+  color: black;
+  margin: 0 2vw;
+  font-weight: bold;
+  font-size: large;
+}
+
+.cover_container {
+  position: relative;
+}
+.cover_photo {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+.tag {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: xx-large;
+  background: rgba(153, 153, 153, 0.3);
+  width: 100%;
+  text-align: center;
+}
+
+.bar {
+  background: lightslategray;
+  height: 10vh;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+}
+
+.quote {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 5rem 0px;
+}
+.quote:nth-child(even) {
+  flex-direction: row;
+}
+.legends {
+  width: 30vw;
+}
+.inside_quote {
+  padding: 5px;
+}
+.speech {
+  align-self: center;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.handwriting {
+  font-family: "Dancing Script", cursive, Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width: 650px) {
+  /* .header {
+      position: fixed;
+    }
+    .main {
+    } */
+  .container {
+    flex-direction: row;
+    align-content: center;
+    width: 100vw;
+  }
+  .my_image {
+    width: 15vw;
+  }
+  .my_name {
+    font-size: 1.2rem;
+  }
+  .box {
+    width: 100vw;
+  }
+  .box > a {
+    width: 15.2vw;
+    height: 3rem;
+    font-size: 1.2rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+  .inside_quote {
+    font-size: 1.5rem;
+  }
+  .handwriting {
+    font-size: 2.5rem;
+  }
+
+  .intro > p {
+    font-size: 2.5rem;
+  }
+  .legends {
+    width: 25vw;
+  }
+}
+
+.social_link {
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+  font-size: large;
+  transition: transform 0.3s;
+}
+
+.social_link:visited {
+  color: blue;
+}
+.social_link:hover {
+  transform: perspective(200px) translateZ(15px);
+}

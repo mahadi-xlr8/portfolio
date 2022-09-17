@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contact_head {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  height: 6vh;
+
+  z-index: 10;
+}
+.logo {
+  position: relative;
+  font-weight: bolder;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 1.5rem;
+  padding-left: 2px;
+  transition: transform 0.5s;
+}
+.logo:hover,
+.contact_head li:hover {
+  transform: perspective(200px) translateZ(10px);
+}
+.contact_head ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact_head li {
+  position: relative;
+  list-style: none;
+}
+
+.contact_head li a {
+  text-decoration: none;
+  color: black;
+  margin: 0 2vw;
+  font-weight: bold;
+  font-size: large;
+}
+
+.cover_container {
+  position: relative;
+}
+.cover_photo {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+.tag {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: xx-large;
+  background: rgba(153, 153, 153, 0.3);
+  width: 100%;
+  text-align: center;
+}
+
+.bar {
+  background: lightslategray;
+  height: 10vh;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+}
+
+/* main */
+
+.language {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.language li {
+  list-style: none;
+  margin: 0 10vw;
+}
+.list_div {
+  display: flex;
+  flex-direction: column;
+}
+.list_div p {
+  font-weight: bold;
+  text-align: center;
+  padding: 5px 0;
+}
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.br {
+  background: lightcyan;
+  height: 8vh;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+}
+
+.programming {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2vw;
+}
+.programming div {
+  margin: 2vw;
+  transition: transform 0.2s;
+}
+.programming div:hover {
+  transform: perspective(200px) translateZ(50px);
+}
+.programming p {
+  text-align: center;
+  font-weight: bold;
+}
